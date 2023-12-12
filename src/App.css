@@ -74,6 +74,9 @@ body {
 .btn{
 color: #353564;
 font-weight: bolder;
-  
+
+}
+.login{
+  text-align: center;
 }
 }
