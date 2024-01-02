@@ -5,9 +5,9 @@ import Home from './Pages/Home';
 import Task from './Pages/Task';
 import Notes from './Pages/Notes';
 import Signup from './Pages/Signup';
-import Login from './Pages/Login';
 import { useAuthentication } from './Contexts/Authentication.context';
 import Navbar from './Companents/Navbar';
+import Login from './Pages/Login';
 
 
 
@@ -20,7 +20,7 @@ function App() {
         <React.Fragment>
         <Route path="/Home" Component={Home} />
         <Route path="/Notes"Component={Notes}/>
-        <Route path="/task" Component={Task} />
+        <Route path="/Task" Component={Task} />
         </React.Fragment>
       )
     }

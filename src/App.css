@@ -72,11 +72,15 @@ body {
   color: #fff;
 }
 .btn{
+  width: 150px;
 color: #353564;
 font-weight: bolder;
 
 }
-.login{
-  text-align: center;
+
 }
+.cards-body{
+  color: #5a5496;
+  padding-left: 380px;
+  
 }

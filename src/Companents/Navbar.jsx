@@ -5,6 +5,7 @@ import { useAuthentication } from "../Contexts/Authentication.context";
 export default function Navbar ({onLogin=()=>{}}){
   const { loggedIn,setLoggedIn} = useAuthentication();
   const Navigate = useNavigate ();
+  
     return (
         <div className="Navbar-content">
       <ul className="lists">
@@ -29,7 +30,7 @@ export default function Navbar ({onLogin=()=>{}}){
           </Link>
         </li>
         <li className="list">
-          <Link className="nav-link"  to={"/task"}>
+          <Link className="nav-link"  to={"/Task"}>
             <i className="bi bi-check2-circle icon"></i>
             <span className="link">Task</span>
           </Link>
@@ -48,9 +49,9 @@ export default function Navbar ({onLogin=()=>{}}){
         </li>
       { !loggedIn && ( <React.Fragment>
        <li className="list">
-          <Link className="nav-link">
+          <Link className="nav-link" to={"/Home"}>
             <span className="link"><button className="btn" onClick={()=>{setLoggedIn(true);
-             Navigate('/Home');
+             Navigate("/Home");
              }}
              >LOGIN</button></span>
           </Link>
